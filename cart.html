@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+
+    <!-- (A) CSS + JS -->
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="products.css">
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-color: aquamarine">
+     <div class="header" style="width: 100%; height: 100px; ">
+
+            <div class="column left" style="background-color: peachpuff;">
+              <center><h2>Bokus</h2></center>
+            </div>
+            <div class="column middle" style="background-color: burlywood;">
+              <form class="example" action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+            <div class="column right" style="background-color: peachpuff; ">
+              <center><h2><button style="font-size:24px; background-color: #008CBA;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;" class="checkoutcount" onclick="showhideCart()"><i class="fa fa-shopping-cart"></i> Checkout (<span id="cartcount"></span>)</button></h2></center>
+            </div>
+
+    </div><br>
+    <div class="header" style="width: 100%; height: 100px ">
+         <div class="column left" style="background-color: lightsalmon;">
+          <a href="#" style="color: black ;text-decoration: none;"><center><h2>Vara bocker</h2></center></a>
+        </div>
+                  <div class="column left" style="background-color: lightsalmon;">
+          <a href="#" style="color: black ;text-decoration: none;"><center><h2>Nyheter</h2></center></a>
+        </div>
+                  <div class="column left" style="background-color: lightsalmon;">
+          <a href="#" style="color: black ;text-decoration: none;"><center><h2>Topplistor</h2></center></a>
+        </div>
+                  <div class="column left" style="background-color: lightsalmon;">
+          <a href="#" style="color: black ;text-decoration: none;"><center><h2>Bokus Play</h2></center></a>
+        </div>
+<!-- nanvigation -->
+    </div><br>
+
+    <div id="cart-wrap">
+      <!-- (B) PRODUCTS LIST -->
+      <div style="width: 100%">
+        <p style="size: 24px"> <b>En trygg bokhandel</b> </p>
+          <p align="justify"> Vi har sålt böcker på nätet sen 1997 och är certifierade som Trygg e-handel. På bokus.com får du ett stort sortiment, billiga böcker, snabba leveranser och tonvis med inspiration!</p>
+      </div><br>
+      <div id="cart-products"></div>
+
+      <!-- (C) CURRENT CART -->
+      <div id="cart-items"></div>
+    </div>
+  </body>
+</html>
